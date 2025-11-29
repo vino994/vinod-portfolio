@@ -1,0 +1,91 @@
+.skills-section {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Titles */
+.section-title {
+  font-family: "Bungee", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section-title .highlight { color: var(--accent-color); }
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--muted-text);
+  margin-top: 8px;
+}
+
+/* Top Skill Cards */
+.top-skill-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.top-skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.4);
+}
+.top-skill-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.skill-meta {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+/* Icons Large */
+.skill-big {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.react { color: #61dafb; }
+.js { color: #f7df1e; }
+.node { color: #3c873a; }
+
+/* Other Skills */
+.other-skills {
+  text-align: center;
+}
+.text-accent { color: var(--accent-color); }
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.badge-skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.badge-skill:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+.badge-skill svg { font-size: 1.1rem; color: var(--accent-color); }
+.badge-skill:hover svg { color: #fff; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-skill-card { padding: 1.5rem; }
+  .skill-big { font-size: 2.5rem; }
+}
+@media (max-width: 576px) {
+  .top-skill-card { padding: 1.2rem; }
+  .skill-big { font-size: 2rem; }
+}

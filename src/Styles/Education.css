@@ -1,0 +1,131 @@
+.education-section {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Title */
+.section-title {
+  font-family: "Bungee", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--muted-text);
+}
+
+/* 🎯 Highlight Cards */
+.highlight-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+}
+.highlight-year {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 6px;
+}
+.highlight-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.highlight-place {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted-text);
+  margin-bottom: 8px;
+}
+.highlight-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1000px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--accent-color);
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+.timeline-item.left { left: 0; text-align: right; }
+.timeline-item.right { left: 50%; text-align: left; }
+.timeline-dot {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  z-index: 2;
+}
+.timeline-content {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+.timeline-content:hover {
+  transform: translateY(-4px);
+}
+.timeline-year {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 6px;
+}
+.text-accent {
+  color: var(--muted-text);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+  transition: all 600ms ease;
+  transition-delay: var(--stagger, 0ms);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .timeline::before { left: 10px; }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 30px;
+  }
+  .timeline-dot { left: 10px; }
+}

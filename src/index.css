@@ -1,0 +1,50 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* 🌞 Light Theme (default) */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #111;
+  --card-bg: #ffffff;
+  --card-border: rgba(0,0,0,0.1);
+  --accent-color: #ff3b3b;
+  --muted-text: #555;
+}
+
+/* 🌙 Dark Theme */
+body.dark-theme {
+  --bg-color: #0e0e0f;
+  --text-color: #e7e7e7;
+  --card-bg: #1a1a1a;
+  --card-border: rgba(255,255,255,0.08);
+  --accent-color: #ff3b3b;
+  --muted-text: #aaa;
+}
+
+/* Apply globally */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Bungee", sans-serif;
+}
+
+
+
+
+*, *::before, *::after {
+  font-family: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
