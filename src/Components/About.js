@@ -12,7 +12,7 @@ import {
   FaCss3Alt,
   FaBootstrap,
   FaNodeJs,
-  FaGithub,
+  
   FaLinkedin,
 } from "react-icons/fa";
 
